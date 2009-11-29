@@ -1,0 +1,28 @@
+<div class="white">
+<h1>创建一本新书</h1>
+
+<% form_for(@book) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name,'给书取个好听的名字' %><br />
+    <%= f.text_field :name,:class=>'input' %>
+  </p>
+  <p>
+    <%= f.label :category,'你的写作所属的范围' %><br />
+    <%= f.text_field :category %>
+  </p>
+  <p>
+    <%= f.label :description,'如何介绍你的写作' %><br />
+    <%= f.text_area :description,:class=>'text' %>
+  </p>
+  <p>
+    <%= f.label :is_open,'是否公开：' %>
+    <%= f.check_box :is_open %>
+  </p>
+  <p>
+    <%= image_submit_tag("/images/btn1.png")%>
+  </p>
+<% end %>
+
+<%= link_to '返回', books_path %>
+</div>

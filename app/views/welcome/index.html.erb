@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>bookpub</title>
+<link href="/stylesheets/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="page_margin">
+<div id="header">
+	<div class="content">
+    <img src="/images/leaf.png" alt="logo" align="middle"/>
+    <h1 style="margin-left:76px;margin-top:-40px;">"inn<span style="color:#cc6600;">boo</span></h1>
+    <div class="index_login">
+<% if logged_in? -%>
+  <div id="user-bar-greeting">你好， <%= link_to_current_user :content_method => :login %>
+    (<%= link_to "退 出", logout_path, { :title => "退 出" }    %>)</div>
+<% else -%>
+ <% form_tag session_path do -%>
+      <%= text_field_tag 'login', @login,:value=>'' %>
+      <%= password_field_tag 'password', nil,:value=>'' %>
+      <%= submit_tag '登录',:id=>'submit'%>
+    <% end -%>
+<% end -%>
+	</div>
+    </div>
+</div>
+
+<div id="main">
+	<div class="content" id="main_1">
+      <h1 style="color:#FFcc00; padding:20px 0 0 30px;"><sup><b>“</b></sup>innBoo<sup><b>”</b></sup>,优秀的在线写作出版平台</h1>
+	  <ul>
+	    <li>1. innboo提供一个在线写作平台</li>
+	    <li>2. 灵感来的那一刻，通过电脑、手机，随时随地创作</li>
+	    <li>3. 在线写作，或者直接上传文件...</li>
+	    <li>4. 每个人的一生，都需要创作一本属于自己的书籍...</li>
+</ul>
+	  <p><a href="/signup"><img src="/images/btn2.png" width="420" height="120" alt="innboo" style="border:0;" /></a></p>
+</div>
+    <div class="content" id="main_2" style="width:75em;">
+     <ul>
+	    <li><img src="/images/split1.png"/></li>
+	    <li><img src="/images/split4.png"/></li>
+	    <li><img src="/images/split3.png"/></li>
+	    <li><img src="/images/split2.png"/></li>
+      </ul>
+	</div>
+</div>
+
+<div id="footer" class="footer">
+	&nbsp;
+</div>
+
+<DIV class="bottom">
+  <DIV>
+    <UL class="smallnav">
+      <LI><A href="http://www.attigohk.com/">首頁</A></LI>
+      <LI><A href="http://blog.attigohk.com/" rel="me">英文博客</A></LI>
+      <LI><A href="http://boke.attigohk.com/" rel="me">中文博客</A></LI>
+     <!-- <li><a href="/zh/labs">LABS</a></li> -->
+      <LI><A href="http://www.attigohk.com/zh/jobs">招聘</A></LI>
+    </UL>
+    <UL class="nav">
+      <LI><H1>产品</H1></LI>
+      <LI><A href="http://www.attigo.us/" rel="parent"><IMG alt="Attigo" src="/images/blog.png"><SPAN>Attigo</SPAN></A></LI>
+      <LI><A href="http://www.chongchongwang.com/" rel="me"><IMG alt="Pay4Bugs" src="/images/group.png"><SPAN>Pay4Bugs蟲蟲網</SPAN></A></LI>
+      <LI><A href="http://87id.com/" rel="me"><IMG alt="87id" src="/images/listen.png"><SPAN>87id</SPAN></A></LI>
+    </UL>
+    <UL class="nav">
+      <LI><H1>联系我们</H1></LI>
+      <LI><A href="mailto:kenrome@gmail.com"><IMG alt="Email" src="/images/online.png"><STRONG>Mail:</STRONG><SPAN>kenrome@gmail.com</SPAN></A></LI>
+      <LI><IMG alt="QQ" src="/images/star.png"><STRONG>QQ: </STRONG><SPAN>77632132</SPAN></LI>
+    </UL>
+    <IMG alt="innboo.com" src="/images/logo.png">  </DIV>
+
+</DIV>
+
+</div>
+</body>
+</html>

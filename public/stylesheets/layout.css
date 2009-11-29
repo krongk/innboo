@@ -1,0 +1,309 @@
+@charset "utf-8";
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Arial Unicode MS", "微软雅黑";
+	font-size: 0.8em;
+	text-align:center;
+	background-color: #A6A43D;
+}
+#header {
+	background-color: #9BA238;
+	color: #FFcc00;
+	margin:0px;
+	padding: 0px;
+	background-color:#0E3695;
+	height: 80px;
+}
+#header_split{
+	background-image: url(../images/bg1.png);
+	background-repeat: repeat-x;
+	margin:0px;
+}
+#main {
+	margin: 0px;
+	padding: 0px;
+	border: 0px solid #D4BA5F;
+}
+#footer {
+	padding: 0px;
+	margin: 150px 0 0 0;
+}
+.content {
+	margin:0 auto;      /* 居中 这个是必须的，，其它的属性非必须 */
+	width:72em;        /* 给个宽度 顶到浏览器的两边就看不出居中效果了 */
+	text-align:left;  /* 文字等内容居中 */
+}
+.page_margin {
+	margin: 0px;
+	padding: 0px;
+}
+#main_1 {
+	background-image: url(../images/2.jpg);
+	height: 400px;
+}
+#main_1 ul{
+	color: #FFF;
+	font-family: "微软雅黑";
+	font-size: 2em;
+	list-style:none;
+}
+#main_2 {
+	padding:0px;
+}
+#main_2 ul{
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 15px;
+	padding-top:10px;
+}
+#main_2 ul li{
+	float:left;
+	margin:0;
+	padding:7px;
+}
+a{
+	color:#3E72BF;
+	background:none;
+	display:inline;
+	text-decoration:underline;
+	cursor:pointer;
+	}
+	
+a:hover{
+	color:#fbac01;
+	}
+	
+	
+.bottom div,.footer div{
+	width:960px;
+	margin:0 auto;
+	padding:20px 0px 0;
+	overflow:hidden;
+	}
+	
+.bottom div{
+	width:940px;
+	padding:20px 10px;
+	}
+	
+
+.bottom div h1{
+	text-indent:0px;
+	height:28px;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fbac01;
+	padding:0;
+	margin:0;
+	margin:0 0 5px;
+	}
+.bottom{
+	border-bottom:1px solid #1c3559;
+	background-image: url(../images/bg1.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-color: #0E3695;
+	}
+.bottom div strong{
+	margin:0 5px 0 0;
+	padding:0;
+	font-size:14px;
+	display:block;
+	float:left;
+	line-height:22px;
+	height:22px;
+	color:#5483c9;
+	}
+	
+.bottom div span{
+	display:block;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	line-height:22px;
+	height:22px;
+	}
+	
+.bottom div .mail{
+	background:url(../images/text.gif) no-repeat 0 -274px;
+	}
+	
+.bottom div .mail span a{
+	color:#c5d8f3;
+	text-decoration:none;
+	}
+
+.bottom div .mail span a:hover{
+	color:#ffffff;
+	text-decoration:none;
+	}	
+	
+.bottom div .fax{
+	background:url(../images/text.gif) no-repeat 0 -322px;
+	border-right:1px dashed #506d99;
+	}
+	
+.bottom div img{
+	margin:40px 0 0 74px;
+	}
+
+.footer{
+	}
+	
+.footer div{
+	padding:0 10px;
+	width:940px;
+	height:33px;
+	font-size:11px;
+	line-height:33px;
+	color:#83a4d6;
+	}
+	
+	
+.bottom div .smallnav{
+	width:220px;
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	}
+	
+.bottom div .smallnav li{
+	height:18px;
+	margin:0;
+	padding:0;
+	}
+	
+.bottom div .smallnav li a{
+	line-height:18px;
+	height:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	}
+	
+.bottom div a{
+	color:#bad0f1;	
+	}
+	
+.bottom div a:hover{
+	color:#e7eef9;	
+	}
+
+.bottom div .nav{
+	border-left:1px solid #506d99;
+	margin:0;
+	padding:0;
+	width:239px;
+	float:left;
+	list-style:none;
+	height:114px;
+	}
+	
+.bottom div .nav li{
+	margin:0 0 5px 20px;
+	padding:0;
+	color:#bad0f1;
+	font-weight:bold;
+	}
+	
+.bottom div .nav li img{
+	display:block;
+	float:left;
+	width:22px;
+	height:22px;
+	margin:0 6px 0 0;
+	padding:0;
+	border:0;
+	}
+	
+.bottom div .nav li a{
+	display:block;
+	height:22px;
+	line-height:22px;
+	font-size:14px;
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	}
+.index_login {
+	float: right;
+	padding: 6px;
+	margin-top: -60px;
+	filter: Alpha("Opacity=60");
+	background-image: url(../images/login_bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #C0CDA9;
+}
+.index_login form {
+	margin: 0px;
+	padding: 0px;
+}
+
+.index_login #login {
+	width: 80px;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	border:solid 1px #9C0;
+	background-color:#DEE6B5;
+}
+.index_login #password {
+	width: 80px;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	border:solid 1px #9C0;
+	background-color:#DEE6B5;
+}
+.index_login #submit {
+	width: 60px;
+	height: 26px;
+	text-align: center;
+	vertical-align: middle;
+}
+.submit{
+
+	}
+.white {
+	padding: 4px 20px;
+	filter: Alpha("Opacity=60");
+	background-color:#CCE3A2;
+}.input {
+	background-color: #FFC;
+	width: 40em;
+	border: 1px solid #A6A43D;
+	height: 24px;
+	text-align: left;
+	vertical-align: bottom;
+}
+.text {
+	background-color: #FFC;
+	height: 10em;
+	width: 40em;
+	border: 1px solid #A6A43D;
+}
+.buttona{
+	background-color: #A6A43D;
+	background-image: url(../images/btn_bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 4px;
+	height: 31px;
+	width: 125px;
+	
+}
+.button{ 
+		clear:both;
+		margin-left:150px;
+		width:125px;
+		height:31px;
+		background:#666666 url(../images/btn_bg2.png) no-repeat;
+		text-align:center;
+		line-height:31px;
+		color:#FFFFFF;
+		font-size:11px;
+		font-weight:bold;
+	}

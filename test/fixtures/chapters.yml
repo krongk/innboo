@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  book: 
+  title: MyString
+  body: MyText
+  is_continue: false
+  continue_chapter_id: 1
+  sort_id: 1
+
+two:
+  book: 
+  title: MyString
+  body: MyText
+  is_continue: false
+  continue_chapter_id: 1
+  sort_id: 1

@@ -1,0 +1,10 @@
+<h1>
+  <%=h @chapter.title %>
+</h1>
+
+<p>
+  <%=h @chapter.body %>
+</p>
+
+<%= link_to '编辑文章内容', edit_book_chapter_path(@book,@chapter) %> |
+<%= link_to '返回', book_path(@book) %>

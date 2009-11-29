@@ -1,0 +1,18 @@
+<div class="white">
+<h1><%=h @book.name %></h1>
+
+<p>
+  <b>分类:</b>
+  <%=h @book.category %>
+</p>
+<p>
+  <b>关于本书:</b>
+  <%=h @book.description %>
+</p>
+
+<%= link_to '编辑', edit_book_path(@book) %> |
+<%= link_to '返回', books_path %>
+</div>
+
+<% @chapters = @book.chapters  %>
+<%=render :file=>'/chapters/index.html.erb'%>

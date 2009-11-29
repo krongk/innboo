@@ -1,0 +1,26 @@
+<h1>Listing gnotes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Mail</th>
+    <th>Site</th>
+    <th>Message</th>
+  </tr>
+
+<% @gnotes.each do |gnote| %>
+  <tr>
+    <td><%=h gnote.name %></td>
+    <td><%=h gnote.mail %></td>
+    <td><%=h gnote.site %></td>
+    <td><%=h gnote.message %></td>
+    <td><%= link_to 'Show', gnote %></td>
+    <td><%= link_to 'Edit', edit_gnote_path(gnote) %></td>
+    <td><%= link_to 'Destroy', gnote, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New gnote', new_gnote_path %>

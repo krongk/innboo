@@ -1,0 +1,28 @@
+<div class="white">
+<h1>修改本书设置</h1>
+
+<% form_for(@book) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name,"书名" %><br />
+    <%= f.text_field :name ,:class=>'input'%>
+  </p>
+  <p>
+    <%= f.label :category,"本书所属类型" %><br />
+    <%= f.text_field :category %>
+  </p>
+  <p>
+    <%= f.label :description,"写点本书介绍，方便游客快速了解你的书" %><br />
+    <%= f.text_area :description,:class=>'text' %>
+  </p>
+  <p>
+    <%= f.label :is_open,"是否公开：" %>
+    <%= f.check_box :is_open %>
+  </p>
+  <p>
+    <%= image_submit_tag("/images/btn1.png")%>
+  </p>
+<% end %>
+</div>
+<%= link_to '预览', @book %> |
+<%= link_to '返回', books_path %>

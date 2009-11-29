@@ -1,0 +1,8 @@
+<% if logged_in? -%>
+  <div id="user-bar-greeting">你好， <%= link_to_current_user :content_method => :login %>
+  (<%= link_to "退 出", logout_path, { :title => "退 出" }    %>)</div>
+<% else -%>
+  <div id="user-bar-greeting"><%= link_to_login_with_IP '你还没有登录', :style => 'border: none;' %>
+                                <%= link_to "请登录",  login_path,  { :title => "Log in" } %>
+                                <%= link_to "或者注册", signup_path, { :title => "Create an account" } %></div>
+<% end -%>

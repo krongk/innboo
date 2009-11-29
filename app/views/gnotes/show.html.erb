@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @gnote.name %>
+</p>
+
+<p>
+  <b>Mail:</b>
+  <%=h @gnote.mail %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%=h @gnote.site %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%=h @gnote.message %>
+</p>
+
+
+<%= link_to 'Edit', edit_gnote_path(@gnote) %> |
+<%= link_to 'Back', gnotes_path %>

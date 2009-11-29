@@ -1,0 +1,25 @@
+<div class="white">
+<% @user.password = @user.password_confirmation = nil %>
+<%= error_messages_for :user %>
+<% form_for :user, :url => users_path do |f| -%>
+  <h1>用户注册</h1>
+  <p>用户注册，请填写以下相关信息</p>
+<p>
+<label>登录名</label><br/>
+<%= f.text_field :login %>
+</p><p>
+<label>电子邮件</label><br/>
+<%= f.text_field :email %>
+</p><p>
+<label>密码</label><br/>
+<%= f.password_field :password %>
+</p><p>
+<label>密码确认</label><br/>
+<%= f.password_field :password_confirmation %>
+</p>
+<label>&nbsp;</label>
+<%= submit_tag '登  录',:class=>'submit' %>
+ <div class="spacer"></div>
+<% end -%>
+
+</div>

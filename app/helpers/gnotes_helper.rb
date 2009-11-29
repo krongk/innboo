@@ -1,0 +1,2 @@
+module GnotesHelper
+end

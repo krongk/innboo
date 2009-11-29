@@ -1,0 +1,22 @@
+<h1></h1>
+
+<table>
+  <tr>
+    <th>章节</th>
+    <th>最近修改时间</th>
+  </tr>
+
+<% @chapters.each do |chapter| %>
+  <tr>
+    <td><%=h chapter.title %></td>
+    <td><%=h format_time(chapter.created_at) %></td>
+    <td><%= link_to '详细', [@book,chapter] %></td>
+    <td><%= link_to '编辑', edit_book_chapter_path(@book,chapter) %></td>
+    <td><%= link_to '删除', [@book,chapter], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '添加新章节', new_book_chapter_path(@book) %>

@@ -1,0 +1,19 @@
+<div class="white">
+  <h1>新建章节</h1>
+<% form_for([@book,@chapter]) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title,'章节标题' %><br />
+    <%= f.text_field :title ,:class=>'input'%>
+  </p>
+  <p>
+    <%= f.label :body,'正文' %><br />
+    <%= f.text_area :body ,:class=>'text'%>
+  </p>
+  
+  <p>
+     <%= image_submit_tag("/images/btn1.png")%>
+  </p>
+<% end %>
+</div>
+<%= link_to '返回', book_path(@book) %>

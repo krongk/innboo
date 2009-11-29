@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  name: MyString
+  category: MyString
+  description: MyText
+  is_open: false
+  sort_id: 1
+
+two:
+  user: 
+  name: MyString
+  category: MyString
+  description: MyText
+  is_open: false
+  sort_id: 1
