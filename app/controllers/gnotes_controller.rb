@@ -1,4 +1,5 @@
 class GnotesController < ApplicationController
+  before_filter :login_required, :except=>[:index,:show]
   # GET /gnotes
   # GET /gnotes.xml
   def index

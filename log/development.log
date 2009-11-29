@@ -7395,3 +7395,64 @@ Completed in 5ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
 Processing WelcomeController#index (for 127.0.0.1 at 2009-11-29 16:11:16) [GET]
 Rendering welcome/index
 Completed in 6ms (View: 3, DB: 17) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2009-11-29 21:47:31) [GET]
+  [4;35;1mBook Load (27.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/application
+Rendering books/index
+  [4;36;1mBook Columns (20.0ms)[0m   [0;1mSHOW FIELDS FROM `books`[0m
+Rendered users/_user_bar (1.0ms)
+Rendered layouts/_header (4.0ms)
+Completed in 86ms (View: 27, DB: 47) | 200 OK [http://127.0.0.1/books]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#edit (for 127.0.0.1 at 2009-11-29 21:47:34) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://127.0.0.1/books/1/edit]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-29 21:47:34) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered users/_user_bar (1.0ms)
+Rendered layouts/_header (1.0ms)
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/session/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GnotesController#index (for 127.0.0.1 at 2009-11-29 21:47:45) [GET]
+  [4;35;1mGnote Load (58.0ms)[0m   [0mSELECT * FROM `gnotes` [0m
+Rendering template within layouts/application
+Rendering gnotes/index
+  [4;36;1mGnote Columns (68.0ms)[0m   [0;1mSHOW FIELDS FROM `gnotes`[0m
+Rendered users/_user_bar (1.0ms)
+Rendered layouts/_header (2.0ms)
+Completed in 171ms (View: 35, DB: 130) | 200 OK [http://127.0.0.1/gnotes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GnotesController#new (for 127.0.0.1 at 2009-11-29 21:47:47) [GET]
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 1) | 302 Found [http://127.0.0.1/gnotes/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-29 21:47:47) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered users/_user_bar (1.0ms)
+Rendered layouts/_header (1.0ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/session/new]

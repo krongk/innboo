@@ -1,4 +1,5 @@
 class ChaptersController < ApplicationController
+  before_filter :login_required, :except=>[:index,:show]
   before_filter :load_book
   def load_book
     @book = Book.find(params[:book_id])
