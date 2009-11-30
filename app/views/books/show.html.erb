@@ -12,7 +12,8 @@
 
 <%= link_to '编辑', edit_book_path(@book) %> |
 <%= link_to '返回', books_path %>
-</div>
-
+</div><br/>
+<div class="box">
 <% @chapters = @book.chapters  %>
 <%=render :file=>'/chapters/index.html.erb'%>
+</div>
