@@ -307,3 +307,5 @@ a:hover{
 		font-size:11px;
 		font-weight:bold;
 	}
+div.box{padding: 10px 30px;margin:0 auto;
+    text-align:left;background: #CCE3A2 url(../images/gradient.png) repeat-x 0 -5px}
