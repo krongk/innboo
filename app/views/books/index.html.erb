@@ -1,28 +1,22 @@
-<div class="white">
+<div>
 <h1>我的写作</h1>
 <% if @books.empty? %>
   <div >你还没开始写作呢，<%= link_to '开始写本新书', new_book_path %>吧！</div>
 <% else %>
-<table>
-  <tr>
-    <th>书名</th>
-    <th>种类</th>
-    <th>描述</th>
-    <th>是否公开</th>
-  </tr>
+
 
 <% @books.each do |book| %>
-  <tr>
-    <td><%=h book.name %></td>
-    <td><%=h book.category %></td>
-    <td><%=h book.description %></td>
-    <td><%=h format_bool(book.is_open) %></td>
-    <td><%= link_to '详细', book %></td>
-    <td><%= link_to '编辑', edit_book_path(book) %></td>
-    <td><%= link_to '删除', book, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <div class="box">
+    <h2><%=h book.name %></h2>
+    分类:<%=h book.category %><br/>
+    描述:<%=h book.description %>
+
+    <%= link_to '详细', book %>
+    <%= link_to '编辑', edit_book_path(book) %>
+    <%= link_to '删除', book, :confirm => 'Are you sure?', :method => :delete %>
+  </div><br/>
 <% end %>
-</table>
+
 <%= link_to '开始写本新书', new_book_path %>
 <% end  %>
 </div>
