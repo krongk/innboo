@@ -5,7 +5,14 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>innboo-<%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'layout','form','scaffold' %>
+  <%= stylesheet_link_tag 'layout','form','scaffold','niftyCorners'%>
+  <%= javascript_include_tag :defaults,'niftycube' %>
+  <script type="text/javascript">
+window.onload=function(){
+Nifty("div.box","transparent");
+Nifty("div.white");
+}
+</script> 
 </head>
 <body>
 <div class="page_margin">
